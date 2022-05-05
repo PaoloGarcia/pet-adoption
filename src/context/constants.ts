@@ -1,17 +1,17 @@
-import { IThemeCSS, IState } from "../types";
+import { IThemeCSS, TState } from "../types";
 
 export const themes: { [k: string]: IThemeCSS } = {
-    light: {
-        backgroundColor: "#ccc",
-        color: "#333"
-    },
-    dark: {
-        backgroundColor: "#000",
-        color: "#fff"
-    }
+   light: {
+      backgroundColor: "#ccc",
+      color: "#333"
+   },
+   dark: {
+      backgroundColor: "#000",
+      color: "#fff"
+   }
 };
 
-export const initialState: IState = {
-    theme: themes.light,
-    themeType: "light"
+export const initialState: TState = {
+   theme: themes.light,
+   themeType: "light"
 };
